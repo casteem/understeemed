@@ -1,6 +1,6 @@
 window.TagStorage = (function() {
   var KEY = 'TAG';
-  var tags = [ 'kr', 'dev' ];
+  var tags = [ 'utopian-io', 'curable' ];
 
   var save = function() {
     localStorage.setItem(KEY, tags.join(','), 3650);
