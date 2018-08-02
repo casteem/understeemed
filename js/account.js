@@ -1,6 +1,6 @@
 window.Account = (function() {
   var KEY_USERNAME = 'USERNAME';
-  var username = localStorage.getItem(KEY_USERNAME) || 'tabris';
+  var username = localStorage.getItem(KEY_USERNAME) || 'steem.racing';
 
   var setAccount = function(newName) {
     username = newName;
