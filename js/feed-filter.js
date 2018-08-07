@@ -121,7 +121,7 @@ window.FeedFilter = (function() {
         fetchingText = 'Fetching page ' + page + '... ';
       }
       $feedCount.html( fetchingText + totalCount + ' articles in total <span class="spacer">&middot;</span> ' +
-        '<a href="https://steemit.com/trending/' + tag + '" target="_blank">trending</a>');
+        '<a href="https://steempeak.com/trending/' + tag + '" target="_blank">trending</a>');
 
       // Fetch average post payout for each user
       // and update DOM once data is ready
