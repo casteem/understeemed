@@ -1,6 +1,6 @@
 window.TagStorage = (function() {
   var KEY = 'TAG';
-  var tags = [ 'utopian-io', 'curable' ];
+  var tags = [ 'witness-category','utopian-io', 'curation','anarchy','introduceyourself', 'steemstem','meetup','minnowsupportproject', 'openmic','steemitworldmap','thealliance', 'teamaustralia' ];
 
   var save = function() {
     localStorage.setItem(KEY, tags.join(','), 3650);
