@@ -17,12 +17,12 @@ window.FeedFilter = (function() {
   var $optionImages = $('#option-images');
   var $optionSort = $('#option-sort');
   var options = {
-    created: 30, // minimum minutes since created
+    created: 25, // minimum minutes since created
     votes: 0, // minimum votes received
-    value: 5, // maximum SBD received
-    reputation: 0, // minimum author reputation score
+    value: 10, // maximum SBD received
+    reputation: 25, // minimum author reputation score
     images: 1, // minimum number of images
-    length: 500, // minimum content length
+    length: 50, // minimum content length
     sort: 'recent'
   };
 
