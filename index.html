@@ -22,7 +22,7 @@
     <div id="account-container"></div>
     <script id="account-template" type="text/x-handlebars-template">
       <h1>
-        <a href="https://steempeak.com/@{{name}}" target="_blank">@{{name}}</a>
+        <a href="https://steem.racing/@{{name}}" target="_blank">@{{name}}</a>
         <small>(VP: {{voting_power}}%)</small>
         <button id="change-user" class="button small">Change</button>
       </h1>
@@ -132,8 +132,8 @@
         sort by
         <span class="select-container">
           <select id="option-sort" class="option-select">
-            <option value="recent" selected>recent post</option>
-            <option value="estimated_reward">higher estimated reward</option>
+            <option value="recent">recent post</option>
+            <option value="estimated_reward" selected>higher estimated reward</option>
           </select>
         </span>
         first
@@ -158,9 +158,9 @@
           </div>
         {{/if}}
         <div class="summary">
-          <h3><a href="https://steempeak.com/@{{author}}/{{permlink}}" target="_blank" class="diff-visited">{{title}}</a></h3>
+          <h3><a href="https://steem.racing/@{{author}}/{{permlink}}" target="_blank" class="diff-visited">{{title}}</a></h3>
           <div class="stats">
-            <a href="https://steempeak.com/@{{author}}" target="_blank">@{{author}}</a>
+            <a href="https://steem.racing/@{{author}}" target="_blank">@{{author}}</a>
             <span class="author-reputation">{{author_rep_score}}</span>
             <span class="category" title="{{tags_string}}">in <strong>{{category}}</strong></span>
             <span class="spacer">&middot;</span>
@@ -183,7 +183,7 @@
       <hr/>
       <center>
         <p>Do you like it? Buy me a coffee to support this project ;)</p>
-        <a href="https://steempeak.com/@steem.racing" target="_blank"><img src="./img/follow-btn@2x.png" alt="Follow @steem.racing" width="186" height="36" /></a>
+        <a href="https://steem.racing/@steem.racing" target="_blank"><img src="./img/follow-btn@2x.png" alt="Follow @steem.racing" width="186" height="36" /></a>
       </center>
     </footer>
 
