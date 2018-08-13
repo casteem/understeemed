@@ -19,7 +19,7 @@ window.FeedFilter = (function() {
   var options = {
     created: 19, // minimum minutes since created
     votes: 0, // minimum votes received
-    value: 10, // maximum SBD received
+    value: 15, // maximum SBD received
     reputation: 26, // minimum author reputation score
     images: 1, // minimum number of images
     length: 100, // minimum content length
