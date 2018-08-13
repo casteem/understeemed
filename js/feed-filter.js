@@ -1,7 +1,7 @@
 window.FeedFilter = (function() {
   var KEY_OPTIONS = 'OPTIONS';
-  var MAX_LENGTH = 100;
-  var MAX_SEARCH_PAGE = 100;
+  var MAX_LENGTH = 75;
+  var MAX_SEARCH_PAGE = 75;
 
   var $feedCount = $('#feed-count');
   var $feedContainer = $('#feed-container');
@@ -17,12 +17,12 @@ window.FeedFilter = (function() {
   var $optionImages = $('#option-images');
   var $optionSort = $('#option-sort');
   var options = {
-    created: 25, // minimum minutes since created
+    created: 19, // minimum minutes since created
     votes: 0, // minimum votes received
     value: 10, // maximum SBD received
-    reputation: 25, // minimum author reputation score
+    reputation: 26, // minimum author reputation score
     images: 1, // minimum number of images
-    length: 50, // minimum content length
+    length: 100, // minimum content length
     sort: 'recent'
   };
 
@@ -49,7 +49,7 @@ window.FeedFilter = (function() {
   };
 
   var fetchNext = function(tag, permlink, author) {
-    var PER_PAGE = 20;
+    var PER_PAGE = 25;
     hasFinished = false;
 
     steem.api.getDiscussionsByCreated({ 'tag': tag, 'limit': PER_PAGE, "start_permlink": permlink, "start_author": author }, function(err, result) {
@@ -121,7 +121,7 @@ window.FeedFilter = (function() {
         fetchingText = 'Fetching page ' + page + '... ';
       }
       $feedCount.html( fetchingText + totalCount + ' articles in total <span class="spacer">&middot;</span> ' +
-        '<a href="https://steempeak.com/trending/' + tag + '" target="_blank">trending</a>');
+        '<a href="https://steemit.com/trending/' + tag + '" target="_blank">trending</a>');
 
       // Fetch average post payout for each user
       // and update DOM once data is ready
