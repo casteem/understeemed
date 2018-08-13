@@ -23,7 +23,7 @@ window.FeedFilter = (function() {
     reputation: 26, // minimum author reputation score
     images: 1, // minimum number of images
     length: 100, // minimum content length
-    sort: 'recent'
+    sort: 'estimated_reward'
   };
 
   var permlinks = {}; // To remove duplicates
